@@ -7,29 +7,135 @@
     android:background="@drawable/back"
     tools:context=".main">
 
-    <TextView
-        android:id="@+id/bzutxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:text="Choose to continue !"
-        android:textColor="@color/Cream"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardavg"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        tools:ignore="MissingConstraints" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="405dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:background="#90C39B"
+        android:backgroundTint="#93C49C"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardtnews"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/profile_but"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#92C39B"
+                android:text="."
+                android:textColor="#92C39B"
+                app:icon="@drawable/baseline_person_24"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/notification_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#92C39B"
+                android:text="."
+                android:textColor="#92C39B"
+                app:icon="@drawable/baseline_notifications_active_24"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/chat_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#92C39B"
+                android:text="."
+                android:textColor="#92C39B"
+                app:icon="@drawable/baseline_chat_24"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/book_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#92C39B"
+                android:text="."
+                android:textColor="#92C39B"
+                app:icon="@drawable/baseline_library_books_24"
+                app:iconSize="30dp" />
+
+            <Button
+                android:id="@+id/home_butM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#92C39B"
+                android:text="."
+                android:textColor="#92C39B"
+                app:icon="@drawable/baseline_home_24"
+                app:iconSize="30dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtnews"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="26dp"
+        app:cardBackgroundColor="#57A382"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardstudent"
+        app:layout_constraintEnd_toStartOf="@+id/cardstudent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardstudent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textViewnews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingStart="40dp"
+            android:text="News Page"
+            android:textColor="@color/Cream"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewnews"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/newslogo" />
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardtask"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="149dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="25dp"
         app:cardBackgroundColor="#57A382"
         app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardstudent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardchat"
         app:layout_constraintTop_toBottomOf="@+id/cardavg"
@@ -48,10 +154,60 @@
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="132dp"
+            android:layout_height="134dp"
             android:layout_marginTop="10dp"
             android:paddingTop="10dp"
             app:srcCompat="@drawable/todolistt" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/bzutxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="535dp"
+        android:text="Choose to continue !"
+        android:textColor="@color/Cream"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardstudent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        app:cardBackgroundColor="#57A382"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardtnews"
+        app:layout_constraintTop_toBottomOf="@+id/cardtask"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textViews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingStart="40dp"
+            android:text="Student Profile"
+            android:textColor="@color/Cream"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViews"
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/studentprofilelogo" />
 
     </androidx.cardview.widget.CardView>
 
@@ -60,14 +216,15 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="23dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="17dp"
         app:cardBackgroundColor="#57A382"
         app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardtnews"
         app:layout_constraintEnd_toStartOf="@+id/cardtask"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardcollege"
+        app:layout_constraintTop_toTopOf="@+id/cardtask"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -84,7 +241,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="137dp"
+            android:layout_height="144dp"
             android:layout_marginTop="10dp"
             app:srcCompat="@drawable/chatt2" />
 
@@ -94,15 +251,14 @@
         android:id="@+id/cardavg"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
         app:cardBackgroundColor="#57A382"
         app:cardElevation="10dp"
         app:layout_constraintBottom_toTopOf="@+id/cardtask"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardcollege"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -118,7 +274,7 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="137dp"
+            android:layout_height="130dp"
             android:layout_marginTop="10dp"
             android:paddingTop="10dp"
             app:srcCompat="@drawable/calculator1" />
@@ -130,15 +286,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="26dp"
         app:cardBackgroundColor="#57A382"
         app:cardElevation="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardchat"
+        app:layout_constraintBottom_toBottomOf="@+id/cardavg"
         app:layout_constraintEnd_toStartOf="@+id/cardavg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardavg"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -147,14 +301,14 @@
             android:layout_height="31dp"
             android:layout_margin="5dp"
             android:paddingStart="20dp"
-            android:text="University Courses "
+            android:text="Library Courses "
             android:textColor="@color/Cream"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
-            android:layout_height="137dp"
+            android:layout_height="130dp"
             android:layout_marginTop="10dp"
             android:paddingTop="10dp"
             app:srcCompat="@drawable/college" />
@@ -163,14 +317,15 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="183dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/bzutxt"
+        android:layout_width="176dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardavg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

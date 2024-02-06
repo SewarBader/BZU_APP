@@ -37,7 +37,7 @@ private Button home,calculate;
         GAPTotal=findViewById(R.id.TotalGAp);
 
         SemesterTotal=findViewById(R.id.Stotal);
-        home=findViewById(R.id.home_butl);
+        home=findViewById(R.id.home_butM);
         calculate=findViewById(R.id.calculaut_l);
 
         calculate.setOnClickListener(new View.OnClickListener() {
