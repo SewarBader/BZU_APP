@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="175dp"
+        android:layout_height="154dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView17"
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textColor="@color/Cream"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal ="true"
+        android:layout_below="@id/imageView10"
+        />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="43dp"
+        android:text="Date"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/Cream"
+
+        android:layout_marginLeft="20dp"
+        />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="422dp"
+        android:layout_height="214dp"
+        android:layout_below="@+id/textDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/Cream"
+        android:layout_below="@+id/calendar"
+
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="401dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/textViewTitle"
+
+        android:hint="Enter task Title"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Cream"
+
+        android:text="Description"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextDesc"
+        android:layout_width="401dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/textViewDesc"
+
+        android:hint="Enter task Description"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/green"
+        android:text="Create New Task"
+        android:textColor="@color/Cream"
+        android:textSize="18sp"
+
+        android:textStyle="normal|bold"
+
+        />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Back"
+        android:textColor="@color/Cream"
+        android:textSize="14sp"
+
+
+        android:textStyle="normal|bold"
+/>
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="175dp"
+        android:layout_height="154dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView17"
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Tasks"
+        android:textColor="@color/Cream"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal ="true"
+        android:layout_below="@id/imageView10"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/green"
+        android:text="+ Add Task"
+        android:textColor="@color/Cream"
+        android:textSize="18sp"
+
+        android:textStyle="normal|bold"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task list is empty! 😄"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal ="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/Cream"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press the + button to create one "
+        android:textSize="16sp"
+        android:textColor="@color/Cream"
+
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="392dp"
+        android:layout_height="416dp"
+        android:layout_above="@id/button"
+        android:layout_below="@id/textView17"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="39dp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Back"
+        android:textColor="@color/Cream"
+        android:textSize="14sp"
+
+
+        android:textStyle="normal|bold"
+
+        />
+
+</RelativeLayout>
