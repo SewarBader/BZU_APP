@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class main extends AppCompatActivity {
 private CardView avg;
 private Button home;

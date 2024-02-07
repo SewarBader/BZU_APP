@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 
+
 public class ListAdapter extends BaseAdapter {
 
     private TaskList taskList;

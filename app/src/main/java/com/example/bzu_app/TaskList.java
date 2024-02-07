@@ -10,6 +10,7 @@ public class TaskList {
     private static final String SHARED_PREFERENCES_FILE_NAME = "tasks";
     private static final String TASKS_KEY = "tasks";
 
+
     private ArrayList<Task> tasks;
 
     public TaskList() {
